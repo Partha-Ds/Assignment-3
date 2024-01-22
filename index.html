@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -8,7 +8,18 @@
     <!-- tailwind & daisy ui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <!-- tailwind custom color -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'slider-btn': '#131318',
+              }
+            }
+          }
+        }
+      </script>
     <!-- google font manrope -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,9 +32,31 @@
     </style>
 </head>
 
-<body>
+<body class="font-manrope">
     <header>
+        <!-- navbar -->
+        <nav>
 
+        </nav>
+        <!-- banner -->
+        <section class="container w-11/12 mx-3 lg:mx-auto">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img src="/Images/1.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle bg-slider-btn border-none text-white">❮</a> 
+                    <a href="#slide2" class="btn btn-circle bg-slider-btn border-none text-white">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="/Images/4.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle bg-slider-btn border-none text-white">❮</a> 
+                    <a href="#slide1" class="btn btn-circle bg-slider-btn border-none text-white">❯</a>
+                  </div>
+                </div> 
+              </div>
+        </section>
     </header>
     <main>
 
