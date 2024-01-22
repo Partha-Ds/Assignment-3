@@ -11,15 +11,15 @@
     <!-- tailwind custom color -->
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                'slider-btn': '#131318',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        'shared-color': '#131318',
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
     <!-- google font manrope -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,24 +42,77 @@
         <section class="container w-11/12 mx-3 lg:mx-auto">
             <div class="carousel w-full">
                 <div id="slide1" class="carousel-item relative w-full">
-                  <img src="/Images/1.png" class="w-full" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide2" class="btn btn-circle bg-slider-btn border-none text-white">❮</a> 
-                    <a href="#slide2" class="btn btn-circle bg-slider-btn border-none text-white">❯</a>
-                  </div>
-                </div> 
+                    <img src="/Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle bg-shared-color border-none text-white">❮</a>
+                        <a href="#slide2" class="btn btn-circle bg-shared-color border-none text-white">❯</a>
+                    </div>
+                </div>
                 <div id="slide2" class="carousel-item relative w-full">
-                  <img src="/Images/4.png" class="w-full" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide1" class="btn btn-circle bg-slider-btn border-none text-white">❮</a> 
-                    <a href="#slide1" class="btn btn-circle bg-slider-btn border-none text-white">❯</a>
-                  </div>
-                </div> 
-              </div>
+                    <img src="/Images/4.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle bg-shared-color border-none text-white">❮</a>
+                        <a href="#slide1" class="btn btn-circle bg-shared-color border-none text-white">❯</a>
+                    </div>
+                </div>
+            </div>
         </section>
     </header>
     <main>
-
+        <!-- club section -->
+        <section class="container w-11/12 mx-3 lg:mx-auto mt-12 lg:mt-24 text-center">
+            <div class="border-y-2 border-dashed py-6 lg:py-8">
+                <h3 class="text-xl lg:text-4xl font-extrabold  text-[#131318]">Professional Hockeys Club</h3>
+                <p class="font-medium text-[#13131899] mt-4 lg:mt-6">Currently there are many hockey clubs. A survey of
+                    some of these professional clubs is given below</p>
+            </div>
+            <div class="flex flex-col lg:flex-row pt-6 lg:pt-12 mb-10 lg:mb-24">
+                <!-- first card -->
+                <div class="card">
+                    <figure class="px-10 pt-10">
+                        <div class="radial-progress rotate-180 text-[#FF4240]" style="--value:87;" role="progressbar">
+                            <span class="rotate-180 text-[#131318] text-2xl font-extrabold">87%</span></div>
+                    </figure>
+                    <div class="card-body items-center">
+                        <h2 class="card-title text-xl font-semibold text-[#131318]">Prayer Facility</h2>
+                        <p class="text-[#13131899]">If a dog chews shoes whose shoes does he choose?</p>
+                    </div>
+                </div>
+                <!-- second card -->
+                <div class="card">
+                    <figure class="px-10 pt-10">
+                        <div class="radial-progress rotate-180 text-[#49D293]" style="--value:95;" role="progressbar">
+                            <span class="rotate-180 text-[#131318] text-2xl font-extrabold">95%</span></div>
+                    </figure>
+                    <div class="card-body items-center">
+                        <h2 class="card-title text-xl font-semibold text-[#131318]">Experienced Coach</h2>
+                        <p class="text-[#13131899]">If a dog chews shoes whose shoes does he choose?</p>
+                    </div>
+                </div>
+                <!-- third card -->
+                <div class="card">
+                    <figure class="px-10 pt-10">
+                        <div class="radial-progress rotate-180 text-[#FFB546]" style="--value:90;" role="progressbar">
+                            <span class="rotate-180 text-[#131318] text-2xl font-extrabold">90%</span></div>
+                    </figure>
+                    <div class="card-body items-center">
+                        <h2 class="card-title text-xl font-semibold text-[#131318]">Prayer Facility</h2>
+                        <p class="text-[#13131899]">If a dog chews shoes whose shoes does he choose?</p>
+                    </div>
+                </div>
+                <!-- fourth card -->
+                <div class="card">
+                    <figure class="px-10 pt-10">
+                        <div class="radial-progress rotate-180 text-[#4C8DF1]" style="--value:80;" role="progressbar">
+                            <span class="rotate-180 text-[#131318] text-2xl font-extrabold">80%</span></div>
+                    </figure>
+                    <div class="card-body items-center">
+                        <h2 class="card-title text-xl font-semibold text-[#131318]">Prayer Facility</h2>
+                        <p class="text-[#13131899]">If a dog chews shoes whose shoes does he choose?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
 
